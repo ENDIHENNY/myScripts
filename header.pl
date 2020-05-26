@@ -18,8 +18,10 @@ print "Generating file header...\n";
 # Generate comment charactor for different source language
 if ($ext eq ".v" or $ext eq ".cpp")	{
 	$character = "//";
-} elsif ($ext eq ".m" or $ext eq ".pl")	{
+} elsif ($ext eq ".pl")	{
 	$character = "\#";
+} elsif ($ext eq ".m")	{
+	$character = "\%";
 } else	{
 	$character = "\#";
 }
